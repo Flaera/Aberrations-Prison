@@ -95,12 +95,12 @@ data = PoolVector3Array( 0.0212, -0.0212, 0.9443, 0.0212, -0.0212, -0.0212, -0.0
 [node name="wood" type="Spatial"]
 
 [node name="Cube" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004, 0, -0.000250548 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004, 0, -0.0953738 )
 mesh = SubResource( 3 )
 skeleton = NodePath("../..")
 material/0 = SubResource( 5 )
 
-[node name="Area" type="Area" parent="Cube"]
+[node name="Area_wood_hitbox" type="Area" parent="Cube"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Cube/Area"]
+[node name="CollisionShape" type="CollisionShape" parent="Cube/Area_wood_hitbox"]
 shape = SubResource( 6 )
