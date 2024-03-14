@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/prison/prison_v1.gd" type="Script" id=1]
 [ext_resource path="res://scenes/wood/wood_v0.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/enemies/enemy0/enemy0.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Shader" id=1]
 resource_name = "Shader Nodetree"
@@ -177,7 +178,7 @@ light_indirect_energy = 0.0
 shadow_enabled = true
 
 [node name="summoner_player" type="Spatial" parent="."]
-transform = Transform( 1, -5.96046e-08, 0, 2.98023e-08, 1, 0, 0, 2.98023e-08, 1, -130.622, 3.55623, -132.4 )
+transform = Transform( 1, -5.96046e-08, 0, 2.98023e-08, 1, 0, 0, 2.98023e-08, 1, -130.622, 1.71159, -132.4 )
 
 [node name="wood" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.782, 0.086, -128.945 )
@@ -202,3 +203,6 @@ transform = Transform( 0.654886, 0, 0.755728, 0, 1, 0, -0.755728, 0, 0.654886, 7
 
 [node name="wood8" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.620505, 0, 0.784203, 0, 1, 0, -0.784203, 0, 0.620505, 45.932, 0.086, 28.7404 )
+
+[node name="enemy0" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -118.183, 0.994873, -133.101 )
